@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Uberprice{
+            constructor(km,petrolcost,milege){
+                this.km=km;
+                this.petrolcost=petrolcost;
+                this.milege=milege;
+            }
+            get price(){
+                return (this.km*this.petrolcost)/this.milege;
+            }
+        };
+        
+        const price1=new Uberprice(30,100,13);
+        const price2=new Uberprice(24,94.6,10);
+        console.log(price1.price);
+        console.log(price2.price);
+    </script>
+</body>
+</html>
